@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+:root {
+  --stationame: 4 Avenue;
+  --white: #faf0a6; 
+}
+.dropbutton {
+  background-color: #ff7800;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  background-color: #f0f0f0;
+  min-width: 280px;
+  overflow: auto;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  display: block;
+}
+
+
+.show {display: block;}
+</style>
+</head>
+<body>
+
+
+<div class="dropdown">
+  <button onclick="EffectiveDropdown()" class="dropbutton">Dropdown</button>
+  <div id="Dropdown" class="dropdown-content">
+    <a>Station Name: 45th street</a>
+    <a>Subway Lines: R, W</a>
+    <a>Entrance availability: Stairs, Elevator</a>
+    <a>Disability Assistance: No</a>
+    <a>Latitude: 40.6603230</a>
+    <a>Longitude: -73.9979520</a>
+
+  </div>
+</div>
+
+<script>
+function EffectiveDropdown() {
+  document.getElementById("Dropdown").classList.toggle("show");
+}
+
+</script>
+</body>
+</html>
